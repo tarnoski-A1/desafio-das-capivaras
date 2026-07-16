@@ -29,7 +29,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 100; /* Fica por cima de tudo */
+    z-index: 100;
 }
 
 .caixa-nivel {
@@ -65,30 +65,30 @@ body {
     transform: scale(1.05);
 }
 
-/* Classe para esconder a tela de nível quando o jogo começar */
 .escondido {
     display: none !important;
 }
 
+/* --- TABULEIRO AUMENTADO --- */
 #tabuleiro {
     display: grid;
-    grid-template-columns: repeat(5, 75px);
-    gap: 8px;
+    grid-template-columns: repeat(5, 95px); /* Aumentado de 75px para 95px */
+    gap: 10px; /* Ajuste no espaçamento */
     justify-content: center;
     align-content: center;
     background-image: url('tabuleiro_fundo.png');
     background-size: cover;
     background-position: center;
-    width: 420px; 
-    height: 420px;
+    width: 550px; /* Aumentado de 420px para 550px */
+    height: 550px; /* Aumentado de 420px para 550px */
     margin: 10px auto; 
     border-radius: 20px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
 .casa {
-    width: 75px;
-    height: 75px;
+    width: 95px; /* Aumentado de 75px para 95px */
+    height: 95px; /* Aumentado de 75px para 95px */
     border-radius: 12px;
     display: flex;
     justify-content: center;
