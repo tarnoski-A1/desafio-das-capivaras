@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Desafio das Capivaras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Tela Inicial -->
+    <div id="tela-nivel" class="overlay">
+        <div class="caixa-nivel">
+            <h2>NÍVEL 01</h2>
+            <button onclick="iniciarJogo()">JOGAR</button>
+        </div>
+    </div>
+
+    <!-- Tela de Game Over (Derrota - Funciona em todos os níveis) -->
+    <div id="tela-gameover" class="overlay escondido">
+        <div class="caixa-nivel">
+            <h2 style="font-size: 32px; margin-bottom: 30px;">Aluno da Escola Major, você pode fazer melhor, vamos jogar de novo?</h2>
+            <button onclick="reiniciarJogo()">REINICIAR NÍVEL</button>
+        </div>
+    </div>
+
+    <!-- Tela de Transição (Pisca rápido na tela) -->
+    <div id="tela-transicao" class="overlay escondido">
+        <div class="caixa-nivel">
+            <h2 id="texto-transicao" style="font-size: 64px; color: #4CAF50; margin-bottom: 0;">NÍVEL 02</h2>
+        </div>
+    </div>
+
+    <!-- NOVA: Tela de Vitória Final -->
+    <div id="tela-vitoria" class="overlay escondido">
+        <div class="caixa-nivel">
+            <h2 style="font-size: 40px; color: #4CAF50; margin-bottom: 10px;">PARABÉNS!</h2>
+            <p style="font-size: 28px; color: #5D4037; margin-bottom: 30px;">Aluno da Escola Major, você completou todos os desafios!</p>
+            <button onclick="reiniciarTudo()">JOGAR DESDE O INÍCIO</button>
+        </div>
+    </div>
+
+    <h1>Desafio das Capivaras</h1>
+    
+    <div id="painel">
+        <span id="relogio">Tempo: 00:00</span>
+    </div>
+
+    <div id="tabuleiro"></div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
