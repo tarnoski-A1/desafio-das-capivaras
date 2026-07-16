@@ -10,12 +10,12 @@ body {
 
 /* Estilo do Relógio */
 #painel {
-    font-size: 24px;
+    font-size: 28px; /* Aumentei a letra do relógio também */
     font-weight: bold;
     background-color: #fff;
-    padding: 10px 25px;
+    padding: 12px 30px;
     border-radius: 12px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     border: 3px solid #8BC34A;
     color: #333;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -48,6 +48,12 @@ body {
     margin-bottom: 30px;
 }
 
+.caixa-nivel p {
+    font-size: 28px; 
+    color: #5D4037; 
+    margin-bottom: 30px;
+}
+
 .caixa-nivel button {
     padding: 15px 40px;
     font-size: 24px;
@@ -69,26 +75,26 @@ body {
     display: none !important;
 }
 
-/* --- TABULEIRO AUMENTADO --- */
+/* --- TABULEIRO GIGANTE PARA DESKTOP --- */
 #tabuleiro {
     display: grid;
-    grid-template-columns: repeat(5, 95px); /* Aumentado de 75px para 95px */
-    gap: 10px; /* Ajuste no espaçamento */
+    grid-template-columns: repeat(5, 125px); /* Casas muito maiores */
+    gap: 14px; /* Espaçamento ajustado */
     justify-content: center;
     align-content: center;
     background-image: url('tabuleiro_fundo.png');
     background-size: cover;
     background-position: center;
-    width: 550px; /* Aumentado de 420px para 550px */
-    height: 550px; /* Aumentado de 420px para 550px */
+    width: 720px; /* Tabuleiro de 720x720 pixels */
+    height: 720px; 
     margin: 10px auto; 
     border-radius: 20px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
 .casa {
-    width: 95px; /* Aumentado de 75px para 95px */
-    height: 95px; /* Aumentado de 75px para 95px */
+    width: 125px; 
+    height: 125px; 
     border-radius: 12px;
     display: flex;
     justify-content: center;
@@ -123,8 +129,8 @@ body {
 }
 
 .selecionada {
-    border: 4px solid #FFEB3B !important;
-    box-shadow: 0 0 15px #FFEB3B;
+    border: 6px solid #FFEB3B !important; /* Borda de seleção mais grossa */
+    box-shadow: 0 0 20px #FFEB3B;
     transform: scale(1.1);
     z-index: 10;
 }
